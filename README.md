@@ -14,15 +14,11 @@ A rapid prototype chatbot that integrates with JIRA and GitHub APIs to answer qu
 
 ### 1. Configure Environment Variables
 
-Add the following to your Vercel project's environment variables (Vars section):
-
-\`\`\`
 JIRA_BASE_URL=https://your-instance.atlassian.net
 JIRA_API_TOKEN=your-api-token
 JIRA_EMAIL=your-email@example.com
 GITHUB_TOKEN=your-github-token
 OPENAI_API_KEY=your-openai-key (optional, for AI responses)
-\`\`\`
 
 ### 2. Get Your API Tokens
 
@@ -51,7 +47,6 @@ Example queries:
 
 ## Architecture
 
-\`\`\`
 Team Activity Monitor
 ├── Frontend (chat-interface.tsx)
 │   └── React component with message history
@@ -61,7 +56,7 @@ Team Activity Monitor
 │   ├── GitHub Client (github-client.ts)
 │   └── Response Generator (response-generator.ts)
 └── UI Components (shadcn/ui)
-\`\`\`
+
 
 ## Core Components
 
@@ -90,12 +85,3 @@ Team Activity Monitor
 ✅ Error handling for missing credentials
 ✅ Error handling for invalid usernames
 
-## Future Enhancements
-
-- Caching layer for frequently requested data
-- User authentication and authorization
-- Dashboard with team metrics
-- Slack bot integration
-- Historical activity tracking
-- Performance analytics
-- Advanced query filters (date ranges, priority levels)
